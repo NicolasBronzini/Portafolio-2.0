@@ -1,0 +1,52 @@
+.title {
+    font-family: 'Open Sans', sans-serif;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    /* Created with https://www.css-gradient.com */
+    background: rgba(7, 8, 49, 1.0);
+    background: -webkit-linear-gradient(bottom, rgba(7, 8, 49, 1.0), rgba(1, 1, 1, 1.0));
+    background: -moz-linear-gradient(bottom, rgba(7, 8, 49, 1.0), rgba(1, 1, 1, 1.0));
+    background: linear-gradient(to top, rgba(7, 8, 49, 1.0), rgba(1, 1, 1, 1.0));
+
+
+}
+
+.title h1 {
+    font-weight: 900;
+    margin: auto;
+    color: white;
+}
+
+.point {
+    color: red;
+}
+
+.star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: twinkle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

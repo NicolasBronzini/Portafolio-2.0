@@ -1,0 +1,41 @@
+.ContainerCer {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(71, 186, 221, 1.0);
+    background: linear-gradient(to top, rgb(218, 231, 235), rgb(164, 208, 222));
+    z-index: 1;
+}
+
+.ContainerImg {
+    margin: 50px;
+    flex: 1;
+}
+
+.ContainerImg img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+@media (max-height: 100vh) {
+    .ContainerImg {
+        flex-basis: calc(50% - 100px);
+        max-width: 400px;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ContainerCer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContainerImg {
+        flex-basis: auto;
+        margin: 50px 0;
+    }
+}

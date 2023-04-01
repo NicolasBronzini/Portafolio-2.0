@@ -1,0 +1,25 @@
+.platilloVolador {
+    position: absolute;
+    top: 40%;
+    left: -5px;
+    width: 75%;
+    height: 200px;
+    background: transparent;
+    z-index: 1;
+    animation: vuela 5s linear infinite;
+}
+
+.platilloVolador img {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes vuela {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

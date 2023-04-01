@@ -1,0 +1,21 @@
+.containerText {
+
+    /* Created with https://www.css-gradient.com */
+    background: rgba(71, 186, 221, 1.0);
+    background: linear-gradient(to top, rgb(25, 61, 95), rgb(7, 8, 52));
+}
+
+.containerText h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.containerText p {
+    padding: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+}

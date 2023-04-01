@@ -1,0 +1,133 @@
+.containerForm {
+    background: rgba(71, 186, 221, 1.0);
+    background: linear-gradient(to top, rgb(204, 225, 231), rgb(164, 208, 222));
+    padding: 120px 20px 20px 20px;
+
+}
+
+
+
+.form-wrapper {
+    max-width: 600px;
+    margin: 5px auto;
+    padding: 30px;
+    background-color: #f9e9d6;
+    position: relative;
+    z-index: 1;
+    background-image: url('../img/texture/882.jpg');
+    background-repeat: repeat;
+    background-size: 40% 100%;
+    border: #994d06 solid 7px;
+}
+
+.post {
+
+    width: 10px;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 50px 10px;
+    border-color: transparent transparent #994d06 transparent;
+}
+
+.post:nth-child(2) {
+    left: auto;
+    right: 0;
+    border-width: 50px 0 0 10px;
+    border-color: #994d06 transparent transparent transparent;
+    bottom: -50px;
+}
+
+.post:nth-child(1) {
+    transform: rotate(180deg);
+    bottom: -50px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+    color: white;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: 2px solid #8b5a2b;
+}
+
+
+
+.form-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0px;
+    font-size: 16px;
+    border: 2px solid #8b5a2b;
+    vertical-align: top;
+}
+
+
+.form-submit {
+    background-color: #2c7a07;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #1e460c;
+}
+
+@media screen and (max-width: 600px) {
+    .containerForm {
+        background: rgba(71, 186, 221, 1.0);
+        background: linear-gradient(to top, rgb(204, 225, 231), rgb(164, 208, 222));
+        padding: 220px 20px 20px 20px;
+
+
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+        background-size: 60% 100%;
+    }
+
+
+    .form-group {
+        margin-bottom: 10px;
+        padding: 0px 50px;
+    }
+
+    .form-input {
+        height: 20px;
+        width: 100%;
+    }
+
+    .form-submit {
+        margin-left: 50px;
+    }
+
+    .form-textarea {
+        height: 60px;
+        width: 100%;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 14px;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import Cloud from '../cloud/Cloud';
 import Depayimg from '../../assets/img/Depay.png'
 import HunterPrideImg from '../../assets/img/HunterPride.png'
-import LogiaImg from '../../assets/img/LogiaCompañerosDelSilencio.png'
+import LogiaImg from '../../assets/img/LogiaCompanerosDelSilencio.png'
 import Siena from '../../assets/img/Siena.png'
 import '../../assets/css/cloud.css'
 function Proyecto() {

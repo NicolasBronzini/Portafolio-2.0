@@ -74,7 +74,7 @@
     background-size: contain;
     animation: float 50s infinite linear;
     z-index: 0;
-
+    overflow-x: hidden;
 }
 
 @keyframes float0 {
@@ -137,7 +137,7 @@
 .cloud-animation0 {
     /* Estilos de la nube */
     animation: float0 50s infinite linear;
-
+    overflow-x: hidden;
 
 }
 
@@ -145,19 +145,21 @@
     /* Estilos de la nube */
     animation: float1 50s infinite linear;
 
-
+    overflow-x: hidden;
 }
 
 .cloud-animation2 {
     /* Estilos de la nube */
     animation: float2 40s infinite linear;
     right: 10%;
+    overflow-x: hidden;
 }
 
 .cloud-animation3 {
     /* Estilos de la nube */
     animation: float3 60s infinite linear;
     left: 1%;
+    overflow-x: hidden;
 }
 
 /* Agrega más clases y estilos para cada nube adicional */
@@ -203,51 +205,51 @@
         margin-top: 20px;
     }
 
-    @keyframes float0 {
+    @keyframes float {
         0% {
-            transform: translateX(2900%);
+            transform: translateX(-50%);
         }
 
         50% {
-            transform: translateX(-450%);
+            transform: translateX(50%);
         }
 
         100% {
-            transform: translateX(2900%);
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes float0 {
+        0% {
+            transform: translateX(200%);
+        }
+
+        50% {
+            transform: translateX(-30%);
+        }
+
+        100% {
+            transform: translateX(200%);
         }
     }
 
     @keyframes float1 {
         0% {
-            transform: translateX(-400%);
+            transform: translateX(-30%);
         }
 
         50% {
-            transform: translateX(2800%);
+            transform: translateX(200%);
         }
 
         100% {
-            transform: translateX(-400%);
+            transform: translateX(-30%);
         }
     }
 
     @keyframes float2 {
         0% {
-            transform: translateX(450%);
-        }
-
-        50% {
-            transform: translateX(-2800%);
-        }
-
-        100% {
-            transform: translateX(450%);
-        }
-    }
-
-    @keyframes float3 {
-        0% {
-            transform: translateX(2800%);
+            transform: translateX(30%);
         }
 
         50% {
@@ -255,9 +257,54 @@
         }
 
         100% {
-            transform: translateX(2800%);
+            transform: translateX(30%);
         }
     }
+
+    @keyframes float3 {
+        0% {
+            transform: translateX(200%);
+        }
+
+        50% {
+            transform: translateX(-15%);
+        }
+
+        100% {
+            transform: translateX(200%);
+        }
+    }
+
+
+    .cloud-animation0 {
+        /* Estilos de la nube */
+        animation: float0 50s infinite linear;
+        overflow-x: hidden;
+
+    }
+
+    .cloud-animation1 {
+        /* Estilos de la nube */
+        animation: float1 50s infinite linear;
+
+        overflow-x: hidden;
+    }
+
+    .cloud-animation2 {
+        /* Estilos de la nube */
+        animation: float2 40s infinite linear;
+        right: 10%;
+        overflow-x: hidden;
+    }
+
+    .cloud-animation3 {
+        /* Estilos de la nube */
+        animation: float3 60s infinite linear;
+        left: 1%;
+        overflow-x: hidden;
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {

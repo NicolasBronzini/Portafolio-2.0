@@ -27,6 +27,7 @@ function Cloud(props: CloudProps) {
                     </div>
                     <div className="cloud-image">
                         <img src={proyecto.image} alt={proyecto.text} />
+
                     </div>
                 </div>
             </>

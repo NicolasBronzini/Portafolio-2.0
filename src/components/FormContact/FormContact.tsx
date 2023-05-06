@@ -19,7 +19,7 @@ const ContactForm = () => {
 
         const { name, email, description } = formData;
         // Configuración de la API de Sendinblue
-        const API_KEY = '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';
+        const API_KEY = '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';
         const sendinblue = axios.create({
             baseURL: 'https://api.sendinblue.com/v3',
             headers: {

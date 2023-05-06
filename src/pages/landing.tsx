@@ -1,5 +1,5 @@
 import React from 'react'
-import AbautMe from '../components/abautme/AbautMe'
+import AbautMe from '../components/aboutme/AboutMe'
 // import Certificados from '../components/certificados/cetificados'
 import Footer from '../components/footer/footer'
 import ContactForm from '../components/FormContact/FormContact'
